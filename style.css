@@ -1958,6 +1958,7 @@ address {
       text-align: center;
       color: white; }
     .hero-slider .slides .slide-title {
+      opacity:100%;
       font-weight: 400;
       margin-top: 50px;
       margin-bottom: 30px;
@@ -1996,7 +1997,7 @@ address {
           background: #3f94f6; }
 .map-container{
   /* display: inline-block; */
-  /* align-items: center; */
+  align-items: center;
 }
 .map-container .btn-group-map .east-jakarta a{
   /* object-fit: none; */
@@ -2007,9 +2008,34 @@ address {
   /* border: 1px solid #000; */
 
 }
-.map-container .btn-group-map .north-jakarta {
+/**/
+/* .map-container .btn-group-map .north-jakarta {
   object-fit: none;
   object-position: 1000px 30px;
   width: 200px;
-  
+  position: absolute;
+  width: 200px;
+  height: 148px;
+  left: 684px;
+  top: 341px;
+} */
+/* .map-container .btn-group-map .east-jakarta{
+  position: absolute;
+  left: 878px;
+  top: 443px;
 }
+.map-container .btn-group-map .central-jakarta{
+  position: absolute;
+  left: 807px;
+  top: 412px;
+}
+.map-coontainer .btn-group-map .west-jakarta{
+  position: absolute;
+  left: 646px;
+  top: 358px;
+}
+.map-container .btn-group-map .south-jakarta{
+  position: absolute;
+  left: 725px;
+  top: 521px;
+} */
