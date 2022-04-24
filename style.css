@@ -402,6 +402,7 @@ form input[type="submit"]:focus {
 
 /* Counter */
 .counter {
+  margin-left: 200px;
   margin-bottom: 30px;
   border-right: 1px solid #dadada;
   text-align: center;
@@ -1165,6 +1166,8 @@ address a {
 }
 
 .row {
+  align-content: center;
+  padding-left: 0.5vh;
   margin-left: -15px;
   margin-right: -15px;
   *zoom: 1;
