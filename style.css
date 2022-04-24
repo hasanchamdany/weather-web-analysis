@@ -2686,10 +2686,10 @@ address a {
 .hero-slider .flex-control-paging li a.flex-active {
   background: #3f94f6;
 }
-.map-container {
-  /* display: inline-block; */
-  /* align-items: center; */
-}
+/* .map-container {
+  display: inline-block;
+  align-items: center;
+} */
 .map-container .btn-group-map .east-jakarta a {
   /* object-fit: none; */
   /* object-position: 100px 300px; */
