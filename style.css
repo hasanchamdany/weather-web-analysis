@@ -2689,20 +2689,16 @@ address a {
 .hero-slider .flex-control-paging li a.flex-active {
   background: #3f94f6;
 }
-/* .map-container {
-  display: inline-block;
+.map-container {
+  margin-left: auto;
+  padding-bottom: 45px;
+  display: block;
   align-items: center;
-} */
-.map-container .btn-group-map .east-jakarta a {
-  /* object-fit: none; */
-  /* object-position: 100px 300px; */
-  max-width: 203px;
-  height: auto; /*332px*/
-
-  /* border: 1px solid #000; */
 }
-.map-container .btn-group-map .north-jakarta {
-  object-fit: none;
-  object-position: 1000px 30px;
-  width: 200px;
+.map-container img {
+  margin-left: 400px;
+}
+
+.data-collapse {
+  padding-top: 50px;
 }
