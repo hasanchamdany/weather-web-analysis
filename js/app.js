@@ -1,105 +1,103 @@
-(function($, document, window){
-	
-	$(document).ready(function(){
+(function ($, document, window) {
+  $(document).ready(function () {
+    // hero-slider
+    $(".hero-slider").flexslider({
+      controlNav: true,
+      directionNav: false,
+      animation: "fade",
+    });
 
-		// hero-slider
-		$(".hero-slider").flexslider({
-			controlNav: true,
-			directionNav: false,
-			animation: "fade"
-		});
+    $(".menu-toggle").click(function () {
+      $(".mobile-navigation").slideToggle();
+    });
+    $(".mobile-navigation").append($(".main-navigation .menu").clone());
 
-		$(".menu-toggle").click(function(){
-			$(".mobile-navigation").slideToggle();
-		});
-		$(".mobile-navigation").append($(".main-navigation .menu").clone());
+    // Changing background image using data-attribute
+    $("[data-bg-image]").each(function () {
+      var image = $(this).data("bg-image");
+      $(this).css("background-image", "url(" + image + ")");
+    });
 
+    // Changing background color using data-attribute
+    $("[data-bg-color]").each(function () {
+      var color = $(this).data("bg-color");
+      $(this).css("background-color", color);
+    });
 
-		// Changing background image using data-attribute
-		$("[data-bg-image]").each(function(){
-			var image = $(this).data("bg-image");
-			$(this).css("background-image", "url("+image+")");
-		});
+    var $container = $(".filterable-items");
 
-		// Changing background color using data-attribute
-		$("[data-bg-color]").each(function(){
-			var color = $(this).data("bg-color");
-			$(this).css("background-color", color );
-		});
+    $container.imagesLoaded(function () {
+      $container.isotope({
+        filter: "*",
+        layoutMode: "fitRows",
+        animationOptions: {
+          duration: 750,
+          easing: "linear",
+          queue: false,
+        },
+      });
+    });
+    $(".filterable-nav a").click(function (e) {
+      e.preventDefault();
+      $(".filterable-nav .current").removeClass("current");
+      $(this).addClass("current");
 
-		var $container = $('.filterable-items');
+      var selector = $(this).attr("data-filter");
+      $container.isotope({
+        filter: selector,
+        animationOptions: {
+          duration: 750,
+          easing: "linear",
+          queue: false,
+        },
+      });
+      return false;
+    });
+    $(".mobile-filter").change(function () {
+      var selector = $(this).val();
+      $container.isotope({
+        filter: selector,
+        animationOptions: {
+          duration: 750,
+          easing: "linear",
+          queue: false,
+        },
+      });
+      return false;
+    });
 
-		$container.imagesLoaded(function(){
-		    $container.isotope({
-		        filter: '*',
-		        layoutMode: 'fitRows',
-		        animationOptions: {
-		            duration: 750,
-		            easing: 'linear',
-		            queue: false
-		        }
-		    });
+    initLightbox({
+      selector: ".filterable-item a",
+      overlay: true,
+      closeButton: true,
+      arrow: true,
+    });
 
-		});
-	    $('.filterable-nav a').click(function(e){
-	    	e.preventDefault();
-	        $('.filterable-nav .current').removeClass('current');
-	        $(this).addClass('current');
+    $(".map").gmap3(
+      {
+        map: {
+          options: {
+            maxZoom: 14,
+          },
+        },
+        marker: {
+          address: "40 Sibley St, Detroit",
+          options: {
+            icon: new google.maps.MarkerImage(
+              "images/map-marker.png",
+              new google.maps.Size(43, 53, "px", "px")
+            ),
+          },
+        },
+      },
+      "autofit"
+    );
+  });
 
-	        var selector = $(this).attr('data-filter');
-	        $container.isotope({
-	            filter: selector,
-	            animationOptions: {
-	                duration: 750,
-	                easing: 'linear',
-	                queue: false
-	            }
-	         });
-	         return false;
-	    });
-	    $('.mobile-filter').change(function(){
-
-	        var selector = $(this).val();
-	        $container.isotope({
-	            filter: selector,
-	            animationOptions: {
-	                duration: 750,
-	                easing: 'linear',
-	                queue: false
-	            }
-	         });
-	         return false;
-	    });
-
-	    initLightbox({
-	    	selector : '.filterable-item a',
-	    	overlay: true,
-	    	closeButton: true,
-	    	arrow: true
-	    });
-
-		$('.map').gmap3({
-			map: {
-				options: {
-					maxZoom: 14 
-				}  
-			},
-			marker:{
-				address: "40 Sibley St, Detroit",
-				options: {
-					icon: new google.maps.MarkerImage(
-						"images/map-marker.png",
-						new google.maps.Size(43, 53, "px", "px")
-					)
-				}
-			}
-		},
-		"autofit" );
-
-	});
-
-	$(window).load(function(){
-
-	});
-
+  $(window).load(function () {});
 })(jQuery, document, window);
+
+var collapseElementList = [].slice.call(document.querySelectorAll(".collapse"));
+var collapseList = collapseElementList.map(function (collapseEl) {
+  return new bootstrap.Collapse(collapseEl);
+});
