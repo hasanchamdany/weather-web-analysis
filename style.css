@@ -378,6 +378,17 @@ form input[type="submit"]:focus {
   margin: 30px 0 50px;
   color: #383737;
 }
+
+.section-title2 {
+  font-size: 60px;
+  font-size: 3.75em;
+  padding-bottom: 0px;
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  margin: 30px 0 1px;
+  color: #383737;
+}
 .dark-bg .section-title {
   color: white;
 }
@@ -393,6 +404,17 @@ form input[type="submit"]:focus {
   margin: auto;
 }
 
+.section-title2:after {
+  content: " ";
+  width: 50px;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
 /* section description */
 .section-desc {
   text-align: center;
@@ -2708,6 +2730,16 @@ address a {
   text-align: center;
   align-items: center;
   width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.iklim img{
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
