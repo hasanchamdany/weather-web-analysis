@@ -2702,3 +2702,13 @@ address a {
 .data-collapse {
   padding-top: 50px;
 }
+
+.peta img{
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
