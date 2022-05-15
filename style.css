@@ -2744,3 +2744,7 @@ address a {
   margin-left: auto;
   margin-right: auto;
 }
+.latarBelakang p{
+  text-align: center;
+  font-size: 84px;
+}
