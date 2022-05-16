@@ -66,87 +66,167 @@
       <main class="main-content">
         <div class="fullwidth-block content">
           <div class="container">
-            <h1 class="entry-title">Data</h1>
-            <!-- <div class="container"> -->
-            <div class="text-center">
-              <img src="dummy/peta-jakarta-1.jpeg" alt="Jakarta" class="img-fluid rounded" style="max-width:50%;"/>
-            </div>
-            <div class="data-collapse">
-              <div class="container">
-                <div class="row">
-                  <div class="col">
-                    <a class="west-jakarta" data-bs-toggle="collapse" href="#westJakarta" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      <img src="dummy/jakarta-map/westJakarta.png" class="img-thumbnail">
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a class="north-jakarta" data-bs-toggle="collapse" href="#northJakarta" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      <img src="dummy/jakarta-map/northJakarta.png" class="img-thumbnail">
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a class="central-jakarta" data-bs-toggle="collapse" href="#centralJakarta" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      <img src="dummy/jakarta-map/centralJakarta.png" class="img-thumbnail">
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a class="south-jakarta" data-bs-toggle="collapse" href="#southJakarta" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      <img src="dummy/jakarta-map/southJakarta.png" class="img-thumbnail">
-                    </a>
-                  </div>
-                  <div class="col">
-                    <a class="east-jakarta" data-bs-toggle="collapse" href="#eastJakarta" role="button" aria-expanded="false" aria-controls="collapseExample">
-                      <img src="dummy/jakarta-map/eastJakarta.png" class="img-thumbnail">
-                    </a>
-                  </div>
-                </div>
+            <h2 class="entry-title">Thiessen Page</h2>
 
-                <div class="row">
-                  <div class="col">
-                    <div class="collapse multi-collapse" id="westJakarta">
-                      <div class="card card-body">
-                      941 kasus DBD
-                    </div>
-                  </div>
-                  </div>
-                  <div class="col">
-                    <div class="collapse multi-collapse" id="northJakarta">
-                      <div class="card card-body">
-                        278 kasus DBD
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="collapse multi-collapse" id="centralJakarta">
-                      <div class="card card-body">
-                        118 kasus DBD
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="collapse multi-collapse" id="southJakarta">
-                      <div class="card card-body">
-                        736 kasus DBD
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="collapse multi-collapse" id="eastJakarta">
-                      <div class="card card-body">
-                        923 kasus DBD
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
-              </div>
-              <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                  Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                </div>
-              </div>
-            </div>
-            
+						<div class="text-center">
+							<div class="filter-links filterable-nav">
+								<select class="mobile-filter">
+									<option value="*">Show all</option>
+									<option value=".titin">Titik</option>
+									<option value=".buffer">Buffer</option>
+								</select>
+								<a href="#" class="current wow fadeInRight" data-filter="*">Show all</a>
+								<a href="#" class="wow fadeInRight" data-wow-delay=".2s" data-filter=".titik">Titik</a>
+								<a href="#" class="wow fadeInRight" data-wow-delay=".4s" data-filter=".buffer">Buffer</a>
+							</div>
+						</div>
+
+						<div class="filterable-items">
+							<div class="gallery-item filterable-item titik">
+								<a href="data/titik/Januari.png"><figure class="featured-image">
+										<img src="data/titik/Januari.png" alt="">
+										<figcaption>Data Titik Januari</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item titik">
+								<a href="data/titik/Februari.png"><figure class="featured-image">
+										<img src="data/titik/Februari.png" alt="">
+										<figcaption>Data Titik Februari</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item titik">
+								<a href="data/titik/Maret.png"><figure class="featured-image">
+										<img src="data/titik/Maret.png" alt="">
+										<figcaption>Data Titik Maret</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item titik">
+								<a href="data/titik/April.png"><figure class="featured-image">
+										<img src="data/titik/April.png" alt="">
+										<figcaption>Data Titik April</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item titik">
+								<a href="data/titik/Mei.png"><figure class="featured-image">
+										<img src="data/titik/Mei.png" alt="">
+										<figcaption>Data Titik Mei</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item titik">
+								<a href="data/titik/Juni.png"><figure class="featured-image">
+										<img src="data/titik/Juni.png" alt="">
+										<figcaption>Data Titik Juni</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item titik">
+								<a href="data/titik/Juli.png"><figure class="featured-image">
+										<img src="data/titik/Juli.png" alt="">
+										<figcaption>Data Titik Juli</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item titik">
+								<a href="data/titik/Agustus.png"><figure class="featured-image">
+										<img src="data/titik/Agustus.png" alt="">
+										<figcaption>Data Titik Agustus</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item titik">
+								<a href="data/titik/September.png"><figure class="featured-image">
+										<img src="data/titik/September.png" alt="">
+										<figcaption>Data Titik September</figcaption>
+									</figure></a>
+							</div>
+              <div class="gallery-item filterable-item titik">
+								<a href="data/titik/Oktober.png"><figure class="featured-image">
+										<img src="data/titik/Oktober.png" alt="">
+										<figcaption>Data Titik Oktober</figcaption>
+									</figure></a>
+							</div>
+              <div class="gallery-item filterable-item titik">
+								<a href="data/titik/November.png"><figure class="featured-image">
+										<img src="data/titik/November.png" alt="">
+										<figcaption>Data Titik November</figcaption>
+									</figure></a>
+							</div>
+              <div class="gallery-item filterable-item titik">
+								<a href="data/titik/Desember.png"><figure class="featured-image">
+										<img src="data/titik/Desember.png" alt="">
+										<figcaption>Data Titik Desember</figcaption>
+									</figure></a>
+							</div>
+              <div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_jan.png"><figure class="featured-image">
+										<img src="data/buffer/layout_jan.png" alt="">
+										<figcaption>Data Buffer Januari</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_feb.png"><figure class="featured-image">
+										<img src="data/buffer/layout_feb.png" alt="">
+										<figcaption>Data Buffer Februari</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_mar.png"><figure class="featured-image">
+										<img src="data/buffer/layout_mar.png" alt="">
+										<figcaption>Data Buffer Maret</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_apr.png"><figure class="featured-image">
+										<img src="data/buffer/layout_apr.png" alt="">
+										<figcaption>Data Buffer April</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_mei.png"><figure class="featured-image">
+										<img src="data/buffer/layout_mei.png" alt="">
+										<figcaption>Data Buffer Mei</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_juni.png"><figure class="featured-image">
+										<img src="data/buffer/layout_juni.png" alt="">
+										<figcaption>Data Buffer Juni</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_juli.png"><figure class="featured-image">
+										<img src="data/buffer/layout_juli.png" alt="">
+										<figcaption>Data Buffer Juli</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_agst.png"><figure class="featured-image">
+										<img src="data/buffer/layout_agst.png" alt="">
+										<figcaption>Data Buffer Agustus</figcaption>
+									</figure></a>
+							</div>
+							<div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_sept.png"><figure class="featured-image">
+										<img src="data/buffer/layout_sept.png" alt="">
+										<figcaption>Data Buffer September</figcaption>
+									</figure></a>
+							</div>
+              <div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_okt.png"><figure class="featured-image">
+										<img src="data/buffer/layout_okt.png" alt="">
+										<figcaption>Data Buffer Oktober</figcaption>
+									</figure></a>
+							</div>
+              <div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_nov.png"><figure class="featured-image">
+										<img src="data/buffer/layout_nov.png" alt="">
+										<figcaption>Data Buffer November</figcaption>
+									</figure></a>
+							</div>
+              <div class="gallery-item filterable-item buffer">
+								<a href="data/buffer/layout_des.png"><figure class="featured-image">
+										<img src="data/buffer/layout_des.png" alt="">
+										<figcaption>Data Buffer Desember</figcaption>
+									</figure></a>
+							</div>
+						</div>
           </div>
         </div>
       </main>

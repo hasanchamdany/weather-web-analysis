@@ -2744,3 +2744,25 @@ address a {
   margin-left: auto;
   margin-right: auto;
 }
+
+.dataMOHR img{
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: 10px;
+  padding-bottom: 20px; */
+}
+
+.graph img{
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
