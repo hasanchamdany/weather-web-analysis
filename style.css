@@ -2800,6 +2800,16 @@ address a {
   margin-right: auto;
   margin-bottom: 10px;
 }
+.table-data4 img{
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 30%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
 
 .dataMOHR img{
   display: block;
