@@ -22,6 +22,10 @@ audio,
 canvas,
 video {
   display: inline-block;
+  align-items: center;
+  text-align: center;
+  margin-left: 65px;
+  margin-right: 15px;
 }
 
 audio:not([controls]) {
