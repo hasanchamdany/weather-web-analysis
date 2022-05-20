@@ -399,6 +399,16 @@ form input[type="submit"]:focus {
   margin: 30px 0 1px;
   color: #383737;
 }
+.section-title4 {
+  font-size: 40px;
+  font-size: 2em;
+  padding-bottom: 0px;
+  position: relative;
+  text-align: center;
+  font-weight: 400;
+  margin: 30px 0 1px;
+  color: #383737;
+}
 .dark-bg .section-title {
   color: white;
 }
@@ -2751,6 +2761,40 @@ address a {
   text-align: center;
   align-items: center;
   width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.table-data img{
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 60%;
+  height: auto;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.table-data2 img{
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 45%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+}
+
+.table-data3 img{
+  display: block;
+  text-align: center;
+  align-items: center;
+  width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
